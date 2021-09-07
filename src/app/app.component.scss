@@ -3,13 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:linear-gradient(to top right,#1565C0,#42A5F5);
+    background:linear-gradient(to top right,#65dfc9,#6cdbeb);
     min-height: 100vh;
 
         header {
             h1{
                 text-align: center;
                 font-family: 'Sriracha', cursive;
+                color:#fff;
             }
         }
         
@@ -36,7 +37,7 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-            background-color: #42A5F5;
+            background-color: #65dfc9;
             form{
                 display:flex;
                 justify-content: center;
