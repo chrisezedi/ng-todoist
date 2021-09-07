@@ -1,0 +1,22 @@
+<div id="todo">
+    <div id="wrapper" [ngClass]="{'strike':task.complete}">
+        <form [formGroup]="taskForm">
+            <input type="checkbox" formControlName="complete" (change)="complete($event)"/>
+            <p id="taskText" *ngIf="!updateMode">{{task.task}}</p>
+            <input id="textField" *ngIf="updateMode" type="text" formControlName="name"/>
+        </form>
+    
+        <div>
+            <div id="buttons" *ngIf="!updateMode" style="display: flex;">
+                <div (click)="toggleUpdate()" class="cursor">
+                    <img src="../../assets/pencil.png" alt="pencil icon">
+                </div>
+                <div (click)="removeTodo()" style="margin-left: 5px;" class="cursor">
+                    <img src="../../assets/trash.png" alt="trash icon">
+                </div>
+            </div>
+
+            <button *ngIf="updateMode" (click)="save()" class="cursor">SAVE</button>
+        </div>
+    </div>
+</div>

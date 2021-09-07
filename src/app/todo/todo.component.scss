@@ -1,0 +1,67 @@
+#todo{
+    min-height: 30px;
+    margin: 10px 5px;
+    padding: 5px;
+   
+    #wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        position: relative;
+        border-radius: 0.2rem;
+        padding: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        form{
+            display:flex;
+            align-items: center;
+            width: 100%;
+
+            p{
+                margin-left: 10px;
+                text-align: justify;
+            }
+
+            #textField{
+                border: 2px solid #42A5F5;
+                outline: none;
+                height: 35px;
+                margin-left: 20px;
+                padding: 5px;
+                border-radius: 3px;
+                width: 100%;
+            }
+        }
+
+        #buttons{
+            display:flex;
+            align-items: center;
+
+        }
+
+        button{
+            border: none;
+            margin: 10px;
+            padding: 10px;
+            background-color: #42A5F5;
+            color: white;
+            font-weight: 600;
+            border-radius: 4px;
+        }
+
+    }
+
+     .strike {
+            &::after{
+                position: absolute;
+                left: 20px;
+                top: 50%;
+                height: 1px;
+                background: gray;
+                content: "";
+                width: calc(100% - 20px);
+                display: block;
+            }
+          }
+}
